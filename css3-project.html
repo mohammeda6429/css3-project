@@ -6,34 +6,40 @@
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <style type="text/css">
     div{
-       width: 150px;
+       width: 150px; 
     height: 150px;
     background: white;
-    transition: width 2s, height 2s, transform 2s;
-      background: linear-gradient(red, purple);
-      box-shadow: 10px 10px lightblue;
+    transition: width 2s, height 2s, transform 2s;/*this line shows how long it takes for the width/height to 300px, and how long it takes for the whole animation*/
+      background: linear-gradient(red, purple); /*this shows the orginal color the box has*/
+      box-shadow: 10px 10px lightblue; /*this shows where the box shadow will be from the box, and the color*/
       animation-name: box;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
+      animation-duration: 4s; /*this is how long it takes for the color to chnage from red/purple to purple/orange */
+      animation-iteration-count: infinite; /*this makes the color change to run an infinite amount of times*/
 
 }
 
 
-div:hover {
-    width: 300px;
-    height: 300px;
-    transform: rotate(360deg);
+div:hover { /*this calls the box so that in can do the animation*/
+    width: 300px; /*this is the width that it'll become by the end of the animation*/
+    height: 300px; /*this is the height that it'll become by the end of the animation*/
+    transform: rotate(360deg); /*this makes the box rotate a specific amount of degrees*/
     }
- @keyframes box {
-    from {background: linear-gradient(red, purple);}
+ @keyframes box { /*this calls the box so you can add code*/
+    from {background: linear-gradient(red, purple);} /*this sets the colors so the box knows what to change too*/
     to {background: linear-gradient(purple, orange);}
 }
-    
+  @keyframes box {
+      0% {opacity: 0.5;} /*changes how much you can see the color of the box*/
+      100% {opacity: 1;} 
+    }  
+    h1 {
+    text-shadow: 2px 3px 6px red; /*gives the text a shadow and its color*/
+}
   </style>
   </head>
   <body>
+    <h1>Touch the Box</h1> 
   <div>
-    
   </div>
   </body>
 </html>
