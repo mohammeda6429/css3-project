@@ -6,10 +6,16 @@
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <style type="text/css">
     div{
-       width: 100px;
-    height: 100px;
+       width: 150px;
+    height: 150px;
     background: white;
     transition: width 2s, height 2s, transform 2s;
+      background: linear-gradient(red, purple);
+      box-shadow: 10px 10px lightblue;
+      animation-name: box;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+
 }
 
 
@@ -18,12 +24,16 @@ div:hover {
     height: 300px;
     transform: rotate(360deg);
     }
+ @keyframes box {
+    from {background: linear-gradient(red, purple);}
+    to {background: linear-gradient(purple, orange);}
+}
     
   </style>
   </head>
   <body>
   <div>
-    today
+    
   </div>
   </body>
 </html>
